@@ -6,19 +6,26 @@ import Technologies from '../components/Technologies/Technologies';
 import Timeline from '../components/TimeLine/TimeLine';
 import { Layout } from '../layout/Layout';
 import { Section } from '../styles/GlobalComponents';
+import Head from 'next/head'
 
 const Home = () => {
   return (
-    <Layout>
-      <Section grid>
-        <Hero />
-        <BgAnimation />
-      </Section>
-      <Projects />
-      <Technologies />
-      <Timeline />
-      <Acomplishments />
-    </Layout>
+    <>
+      <Head>
+        <title>Vikram Nayyar CS Portolio</title>
+      </Head>
+      <Layout>
+        <Section grid>
+          <Hero />
+          <BgAnimation />
+        </Section>
+        <Timeline />
+        <Technologies />
+        <Projects />        
+        {/* <Acomplishments /> */}
+      </Layout>
+    </>
+    
   );
 };
 

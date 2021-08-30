@@ -62,7 +62,7 @@ justify-content: space-between;
 
 export const CompanyContainer = styled.div`
   display: flex;
-	align-items:baseline;
+	align-items:center;
 	flex-wrap: wrap;
 	margin-right: auto;
 	
@@ -98,6 +98,17 @@ export const Slogan = styled.p`
 		line-height: 22px;
 		font-size: 14px;
 		min-width: 100px;
+	}
+`
+
+export const CopyrightContainer = styled.div`
+	display: flex;
+  	align-items: center;
+
+	@media ${props => props.theme.breakpoints.md}{
+		justify-content: center;
+		padding-right: 16px;
+		flex-wrap: wrap;
 	}
 `
 

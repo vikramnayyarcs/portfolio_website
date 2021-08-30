@@ -8,6 +8,7 @@ const Projects = () => (
   <Section nopadding id="projects">
     <SectionDivider />
     <SectionTitle main>Projects</SectionTitle>
+    <br/>
     <GridContainer>
       {projects.map((p, i) => {
         return (
@@ -19,7 +20,7 @@ const Projects = () => (
             </TitleContent>
             <CardInfo className="card-info">{p.description}</CardInfo>
             <div>
-              <TitleContent>Stack</TitleContent>
+              <TitleContent>Stack:</TitleContent>
               <TagList>
                 {p.tags.map((t, i) => {
                   return <Tag key={i}>{t}</Tag>;
@@ -27,8 +28,8 @@ const Projects = () => (
               </TagList>
             </div>
             <UtilityList>
-              <ExternalLinks href={p.visit}>Code</ExternalLinks>
-              <ExternalLinks href={p.source}>Source</ExternalLinks>
+              {p.visit && <ExternalLinks href={p.visit}>Code</ExternalLinks>}
+              {p.source && <ExternalLinks href={p.source}>Source</ExternalLinks>}
             </UtilityList>
           </BlogCard>
         );

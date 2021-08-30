@@ -45,8 +45,22 @@ const Timeline = () => {
   return (
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
+      {/* <img src = "../../../public/images/5.jpg"/> */}
       <SectionText>
-      The purpose of JavaScript Mastery is to help aspiring and established developers to take their development skills to the next level and build awesome apps.
+      I'm a Computer Science Enthusiast, fascinated by business and the way technology is used to achieve results! 
+      <br/>
+      Right now, I'm working in Software Engineering, particularly on the Front End using React JS. 
+      This allows me to bring in other areas such as Cloud Computing and Cyber Security, into the projects that I'm working on!! 
+      <br/>
+      I've also delved into other areas like Data Science/ML ; as well as the lower level architecture of the Computer, even Arduinos.
+      <br/>
+      In the future, I'm looking to move into Cyber Security / Cloud Computing , while still continuing the Software Development on a 
+      freelance basis.
+      <br/>
+      I've started documenting my journey on social media, in the form of InfoGraphics (Instagram) and Blog Posts (Medium). This allows me to
+      share my passion for Computer Science and also to connect with like-minded people. In the future, I hope to branch out onto YouTube too!
+      <br/>
+      This has allowed me to develop skils in Content Creation, Digital Marketing and SEO!
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>

@@ -14,13 +14,18 @@ const Acomplishments = () => (
   <Section>
     <SectionTitle>Personal Achievements</SectionTitle>
     <Boxes>
-      {data.map((card, index) => (
+      {/* {data.map((card, index) => (
         <Box key={index}>
           <BoxNum>{`${card.number}+`}</BoxNum>
           <BoxText>{card.text}</BoxText>
         </Box>
-      ))}
+      ))} */}
+
+      
     </Boxes>
+
+    <iframe src="https://github-readme-stats.vercel.app/api?username=vikramnayyarcs&show_icons=true" style={{width: "400", height: "200", border: "none"}} title="GitHub Statistics"></iframe>
+
     <SectionDivider/>
   </Section>
 );

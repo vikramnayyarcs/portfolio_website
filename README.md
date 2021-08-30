@@ -8,5 +8,7 @@ This is a code repository for the corresponding video tutorial. Your portfolio i
 
 In this video, we will create a full Personal Development Portfolio. We're going to use React and Next.js.
 
+To update background change '#0F1624' to '#184cac'.
+
 Setup:
 - run ```npm i && npm start```

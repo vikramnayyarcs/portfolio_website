@@ -1,39 +1,46 @@
 import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillMediumCircle } from 'react-icons/ai';
+import { DiCssdeck } from 'react-icons/di';
 
 import { SocialIcons } from '../Header/HeaderStyles';
-import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
+import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer,CopyrightContainer } from './FooterStyles';
 
 const Footer = () => {
   return (
     <FooterWrapper>
       <LinkList>
-        <LinkColumn>
+        {/* <LinkColumn>
           <LinkTitle>Call</LinkTitle>
           <LinkItem href="tel:314-343-3432">314-343-3432</LinkItem>
-        </LinkColumn>
+        </LinkColumn> */}
         <LinkColumn>
           <LinkTitle>Email</LinkTitle>
-          <LinkItem href="mailto:contact@jsmastery.com">
-            contact@jsmastery.com
+          <LinkItem href="mailto:vikramnayyarcp@gmail.com">
+            vikramnayyarcp@gmail.com
           </LinkItem>
         </LinkColumn>
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>Innovating one project at a time</Slogan>
+          <DiCssdeck size="3rem" /><Slogan>Vikram Nayyar CS</Slogan>
+        </CompanyContainer>
+        <CompanyContainer>
+          <Slogan>Vikram Nayyar © 2021 All rights reserved</Slogan>
         </CompanyContainer>
         <SocialContainer>
-          <SocialIcons href="https://google.com">
+          <SocialIcons target="_blank" href="https://github.com/vikramnayyarcs/">
             <AiFillGithub size="3rem" />
           </SocialIcons>
-          <SocialIcons href="https://google.com">
+          <SocialIcons target="_blank" href="https://www.linkedin.com/in/vikramnayyar/">
             <AiFillLinkedin size="3rem" />
           </SocialIcons>
-          <SocialIcons href="https://google.com">
+          <SocialIcons target="_blank" href="https://www.instagram.com/vikramnayyarcs/">
             <AiFillInstagram size="3rem" />
           </SocialIcons>
         </SocialContainer>
+        <SocialIcons target="_blank" href="https://vikramnayyarcs.medium.com/">
+          <AiFillMediumCircle size="3rem"/>
+        </SocialIcons>
       </SocialIconsContainer>
     </FooterWrapper>
   );
