@@ -43,7 +43,7 @@ const Timeline = () => {
   }, []);
 
   return (
-    <Section style={{backgroundColor: 'white'}} id="about">
+    <Section id="about">
       <SectionTitle>About Me</SectionTitle>
       {/* <img src = "../../../public/images/5.jpg"/> */}
       <SectionText>
